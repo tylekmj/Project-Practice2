@@ -4,38 +4,94 @@
 /* Global */
 html{
   min-height: 100%;
-  overflow: hidden;
 }
 
 body{
-  height: calc(100vh - 8em);
-  padding: 4em;
-  color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;  
-  background: linear-gradient(90deg,rgba(8, 243, 255, 1) 0%, rgb(97, 185, 249) 50%, rgba(8, 243, 255, 1) 100%);
-
+  background: rgba(0, 149, 255, 1);
+  overflow-y: scroll;
 }
+
+nav {
+  background: #25ffbe;
+  position: sticky;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    content: '';
+    margin: auto;
+    border-width: 50px;
+    border-style: solid;
+    border-color: #25ffbe transparent transparent transparent;
+}
+
+.section1{
+  background: rgb(11, 22, 25, 1);
+  color: #25ffbe
+}
+
+.section2{
+  background: rgba(0, 149, 255, 1);
+  color: rgba(255,255,255,.75)
+}
+
+.section3{
+  background: rgb(11, 22, 25, 1);
+  color: rgba(158, 0, 0, 0.75);
+}
+
+.gradient { 
+  height: 100px;
+  background: linear-gradient(180deg,rgba(11, 22, 25, 1) 0%, rgb(13, 25, 29) 20%, rgb(202, 198, 198) 40%, rgba(255, 240, 240, 1) 50%, rgba(207, 250, 250, 1) 60%, rgba(0, 149, 255, 1) 100%);
+}
+
+.gradient2 { 
+  height: 100px;
+  background: linear-gradient(180deg,rgba(0, 149, 255, 1) 0%, rgb(207, 250, 250, 1) 20%, rgb(255, 240, 240, 1) 40%, rgb(145, 142, 142) 50%, rgba(13, 25, 29) 60%, rgba(11, 22, 25, 1) 100%);
+}
+
+.linebreak1 {
+  margin-top: 100px;
+}
+
+.linebreak2 {
+  margin-top: 200px;
+}
+
+.linebreak3 {
+  margin-top: 300px;
+}
+
+.linebreak4 {
+  margin-top: 400px;
+}
+
+.linebreak5 {
+  margin-top: 500px;
+}
+
+
 .line-1{
     position: relative;
-    top: 50%;  
-    width: 24em;
+    width: 24vw;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 180%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);    
 }
 
 /* Animation */
 .anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
+  animation: typewriter 2s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 24em;}
+  to{width: 16em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
